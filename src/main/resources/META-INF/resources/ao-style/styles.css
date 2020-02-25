@@ -1,0 +1,129 @@
+/*
+ * ao-style - Set of base CSS styles shared by multiple projects.
+ * Copyright (C) 2020  AO Industries, Inc.
+ *     support@aoindustries.com
+ *     7262 Bull Pen Cir
+ *     Mobile, AL 36695
+ *
+ * This file is part of ao-style.
+ *
+ * ao-style is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ao-style is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with ao-style.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*
+	A table with a thin border around the table and all cells.
+	Has a moderate cell padding.
+ */
+table.ao-thin-grid {
+	border-collapse: collapse;
+}
+table.ao-thin-grid,
+.ao-thin-grid > thead > tr > th,
+.ao-thin-grid > thead > tr > td,
+.ao-thin-grid > tbody > tr > th,
+.ao-thin-grid > tbody > tr > td,
+.ao-thin-grid > tfoot > tr > th,
+.ao-thin-grid > tfoot > tr > td,
+.ao-thin-grid > tr > th,
+.ao-thin-grid > tr > td {
+	border: 1px solid #000;
+	padding: 2px;
+	margin: 0px;
+}
+
+/*
+	A table with a thin border around the table only (but not any cells).
+	Has a moderate cell padding.
+ */
+table.ao-outside-border {
+	border-collapse: collapse;
+	border: 1px solid #000;
+	padding: 2px;
+	margin: 0px;
+}
+.ao-outside-border > thead > tr > th,
+.ao-outside-border > thead > tr > td,
+.ao-outside-border > tbody > tr > th,
+.ao-outside-border > tbody > tr > td,
+.ao-outside-border > tfoot > tr > th,
+.ao-outside-border > tfoot > tr > td,
+.ao-outside-border > tr > th,
+.ao-outside-border > tr > td {
+	border: 0px;
+	padding: 2px;
+	margin: 0px;
+}
+
+/*
+	A table with no borders.
+	Has a moderate cell padding.
+ */
+table.ao-no-border {
+	border-collapse: collapse;
+}
+table.ao-no-border,
+.ao-no-border > thead > tr > th,
+.ao-no-border > thead > tr > td,
+.ao-no-border > tbody > tr > th,
+.ao-no-border > tbody > tr > td,
+.ao-no-border > tfoot > tr > th,
+.ao-no-border > tfoot > tr > td,
+.ao-no-border > tr > th,
+.ao-no-border > tr > td {
+	border: 0px;
+	padding: 2px;
+	margin: 0px;
+}
+
+/*
+	A table with no borders.
+	Has a no cell padding.
+ */
+table.ao-packed {
+	border-collapse: collapse;
+}
+table.ao-packed,
+.ao-packed > thead > tr > th,
+.ao-packed > thead > tr > td,
+.ao-packed > tbody > tr > th,
+.ao-packed > tbody > tr > td,
+.ao-packed > tfoot > tr > th,
+.ao-packed > tfoot > tr > td,
+.ao-packed > tr > th,
+.ao-packed > tr > td {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*
+	A table with no borders.
+	Has a larger cell padding.
+ */
+table.ao-spread {
+	border-collapse: collapse;
+}
+table.ao-spread,
+.ao-spread > thead > tr > th,
+.ao-spread > thead > tr > td,
+.ao-spread > tbody > tr > th,
+.ao-spread > tbody > tr > td,
+.ao-spread > tfoot > tr > th,
+.ao-spread > tfoot > tr > td,
+.ao-spread > tr > th,
+.ao-spread > tr > td {
+	border: 0px;
+	padding: 4px;
+	margin: 0px;
+}
