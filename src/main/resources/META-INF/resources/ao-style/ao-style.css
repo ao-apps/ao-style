@@ -25,19 +25,19 @@
 	A table with a thin border around the table and all cells.
 	Has a moderate cell padding.
  */
-table.ao-thin-grid {
+table.ao-grid {
 	border-collapse: collapse;
 }
-table.ao-thin-grid,
-.ao-thin-grid > thead > tr > th,
-.ao-thin-grid > thead > tr > td,
-.ao-thin-grid > tbody > tr > th,
-.ao-thin-grid > tbody > tr > td,
-.ao-thin-grid > tfoot > tr > th,
-.ao-thin-grid > tfoot > tr > td,
-.ao-thin-grid > tr > th,
-.ao-thin-grid > tr > td {
-	border: 1px solid #000;
+table.ao-grid,
+table.ao-grid > thead > tr > th,
+table.ao-grid > thead > tr > td,
+table.ao-grid > tbody > tr > th,
+table.ao-grid > tbody > tr > td,
+table.ao-grid > tfoot > tr > th,
+table.ao-grid > tfoot > tr > td,
+table.ao-grid > tr > th,
+table.ao-grid > tr > td {
+	border: 1px solid #606060;
 	padding: 2px;
 	margin: 0px;
 }
@@ -48,18 +48,18 @@ table.ao-thin-grid,
  */
 table.ao-outside-border {
 	border-collapse: collapse;
-	border: 1px solid #000;
+	border: 1px solid #606060;
 	padding: 2px;
 	margin: 0px;
 }
-.ao-outside-border > thead > tr > th,
-.ao-outside-border > thead > tr > td,
-.ao-outside-border > tbody > tr > th,
-.ao-outside-border > tbody > tr > td,
-.ao-outside-border > tfoot > tr > th,
-.ao-outside-border > tfoot > tr > td,
-.ao-outside-border > tr > th,
-.ao-outside-border > tr > td {
+table.ao-outside-border > thead > tr > th,
+table.ao-outside-border > thead > tr > td,
+table.ao-outside-border > tbody > tr > th,
+table.ao-outside-border > tbody > tr > td,
+table.ao-outside-border > tfoot > tr > th,
+table.ao-outside-border > tfoot > tr > td,
+table.ao-outside-border > tr > th,
+table.ao-outside-border > tr > td {
 	border: 0px;
 	padding: 2px;
 	margin: 0px;
@@ -73,14 +73,14 @@ table.ao-no-border {
 	border-collapse: collapse;
 }
 table.ao-no-border,
-.ao-no-border > thead > tr > th,
-.ao-no-border > thead > tr > td,
-.ao-no-border > tbody > tr > th,
-.ao-no-border > tbody > tr > td,
-.ao-no-border > tfoot > tr > th,
-.ao-no-border > tfoot > tr > td,
-.ao-no-border > tr > th,
-.ao-no-border > tr > td {
+table.ao-no-border > thead > tr > th,
+table.ao-no-border > thead > tr > td,
+table.ao-no-border > tbody > tr > th,
+table.ao-no-border > tbody > tr > td,
+table.ao-no-border > tfoot > tr > th,
+table.ao-no-border > tfoot > tr > td,
+table.ao-no-border > tr > th,
+table.ao-no-border > tr > td {
 	border: 0px;
 	padding: 2px;
 	margin: 0px;
@@ -94,14 +94,14 @@ table.ao-packed {
 	border-collapse: collapse;
 }
 table.ao-packed,
-.ao-packed > thead > tr > th,
-.ao-packed > thead > tr > td,
-.ao-packed > tbody > tr > th,
-.ao-packed > tbody > tr > td,
-.ao-packed > tfoot > tr > th,
-.ao-packed > tfoot > tr > td,
-.ao-packed > tr > th,
-.ao-packed > tr > td {
+table.ao-packed > thead > tr > th,
+table.ao-packed > thead > tr > td,
+table.ao-packed > tbody > tr > th,
+table.ao-packed > tbody > tr > td,
+table.ao-packed > tfoot > tr > th,
+table.ao-packed > tfoot > tr > td,
+table.ao-packed > tr > th,
+table.ao-packed > tr > td {
 	border: 0px;
 	padding: 0px;
 	margin: 0px;
@@ -115,14 +115,14 @@ table.ao-spread {
 	border-collapse: collapse;
 }
 table.ao-spread,
-.ao-spread > thead > tr > th,
-.ao-spread > thead > tr > td,
-.ao-spread > tbody > tr > th,
-.ao-spread > tbody > tr > td,
-.ao-spread > tfoot > tr > th,
-.ao-spread > tfoot > tr > td,
-.ao-spread > tr > th,
-.ao-spread > tr > td {
+table.ao-spread > thead > tr > th,
+table.ao-spread > thead > tr > td,
+table.ao-spread > tbody > tr > th,
+table.ao-spread > tbody > tr > td,
+table.ao-spread > tfoot > tr > th,
+table.ao-spread > tfoot > tr > td,
+table.ao-spread > tr > th,
+table.ao-spread > tr > td {
 	border: 0px;
 	padding: 4px;
 	margin: 0px;

@@ -54,11 +54,13 @@ along with ao-style.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>
-						<p>
-							Consolidated a base set of styles from multiple projects into this one place.
-							These are very general concepts, like a table with a thin border.
-							Any project that requires any of these styles should add this as a dependency.
-						</p>
+						Consolidated a base set of styles from multiple projects into this one place.
+						These are very general concepts, like a table with a thin border.
+						Any project that requires any of these styles should add this as a dependency.
+					</li>
+					<li>
+						New CSS classes for table formatting:
+						<code>ao-grid</code>, <code>ao-outside-border</code>, <code>ao-no-border</code>, <code>ao-packed</code>, and <code>ao-spread</code>.
 					</li>
 					<li>
 						<p>
@@ -81,6 +83,14 @@ along with ao-style.  If not, see <http://www.gnu.org/licenses />.
 							Perhaps there should also be a complete replacement option by name?
 							Which could be useful when overriding all the styles, it would be
 							useful to just skip the original?
+						</p>
+						<p>
+							Does it make sense to keep track of which resources are required by a specific request,
+							instead of including all registered CSS resources?  Can we just put a link tag
+							wherever in HTML 5 (which we could use to add on first use)?
+							Or, would this require full buffering to put them all in the head?
+							With our aggressive one-year cache of CSS files (and other static resources)
+							enabled by ao-servlet-last-modified, maybe this is really a non-issue.
 						</p>
 						<p>
 							This registry could also possibly perform some automatic coalescing of all the
