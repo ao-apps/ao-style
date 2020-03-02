@@ -37,6 +37,7 @@ along with ao-style.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2020-02-25T08:37:53-0600"
+		dateModified="2020-03-02T01:15:44-0600"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-style:pom.version}" />
@@ -62,43 +63,7 @@ along with ao-style.  If not, see <http://www.gnu.org/licenses />.
 						New CSS classes for table formatting:
 						<code>ao-grid</code>, <code>ao-outside-border</code>, <code>ao-no-border</code>, <code>ao-packed</code>, and <code>ao-spread</code>.
 					</li>
-					<li>
-						<p>
-							TODO: Create a "ao-style-registry" or similar (maybe for more than just CSS files),
-							which projects can add themselves to.  Then themes/skins/layouts/… can use
-							this registry to be sure to include all styles.
-						</p>
-						<p>
-							Registered CSS should have names, similar to name of web-fragment.xml,
-							and support ordering by these names.  It might be useful to allow
-							missing names in the ordering.  ao-graph DAG topological sorts can help
-							with this implementation.
-						</p>
-						<p>
-							Styles could have a few other relevant attributes, such as media,
-							"isRTL" (select right-to-left automatically based on response language),
-							and IE conditional comments.
-						</p>
-						<p>
-							Perhaps there should also be a complete replacement option by name?
-							Which could be useful when overriding all the styles, it would be
-							useful to just skip the original?
-						</p>
-						<p>
-							Does it make sense to keep track of which resources are required by a specific request,
-							instead of including all registered CSS resources?  Can we just put a link tag
-							wherever in HTML 5 (which we could use to add on first use)?
-							Or, would this require full buffering to put them all in the head?
-							With our aggressive one-year cache of CSS files (and other static resources)
-							enabled by ao-servlet-last-modified, maybe this is really a non-issue.
-						</p>
-						<p>
-							This registry could also possibly perform some automatic coalescing of all the
-							registered styles into a single web resource.  Would be tricky, though, as it
-							would require URL rewriting within the CSS, proper last modified timestamp
-							management, and integration with LastModifiedServlet.
-						</p>
-					</li>
+					<li>Registers itself with <core:link book="/ao-web-resources/servlet/" page="/index.jspx" />.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
