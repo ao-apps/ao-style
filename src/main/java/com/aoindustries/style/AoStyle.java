@@ -22,18 +22,21 @@
  */
 package com.aoindustries.style;
 
+import com.aoindustries.web.resources.registry.Style;
 import com.aoindustries.web.resources.servlet.RegistryEE;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
 @WebListener("Registers the style in RegistryEE.")
-public class Initializer implements ServletContextListener {
+public class AoStyle implements ServletContextListener {
+
+	public static final Style AO_STYLE = new Style("/ao-style/ao-style.css");
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
 		// Add our CSS file
-		RegistryEE.get(event.getServletContext()).styles.add("/ao-style/ao-style.css");
+		RegistryEE.get(event.getServletContext()).global.styles.add(AO_STYLE);
 	}
 
 	@Override
