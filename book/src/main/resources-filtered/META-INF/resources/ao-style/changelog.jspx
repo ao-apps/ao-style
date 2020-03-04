@@ -37,7 +37,7 @@ along with ao-style.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2020-02-25T08:37:53-0600"
-		dateModified="2020-03-02T01:15:44-0600"
+		dateModified="2020-03-04T03:14:31-0600"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-style:pom.version}" />
@@ -63,7 +63,7 @@ along with ao-style.  If not, see <http://www.gnu.org/licenses />.
 						New CSS classes for table formatting:
 						<code>ao-grid</code>, <code>ao-outside-border</code>, <code>ao-no-border</code>, <code>ao-packed</code>, and <code>ao-spread</code>.
 					</li>
-					<li>Registers itself with <core:link book="/ao-web-resources/servlet/" page="/index.jspx" />.</li>
+					<li>Registers itself with <core:link book="/ao-web-resources/servlet" page="/index.jspx" />.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
