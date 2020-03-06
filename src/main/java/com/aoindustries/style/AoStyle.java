@@ -22,6 +22,7 @@
  */
 package com.aoindustries.style;
 
+import com.aoindustries.web.resources.registry.Group;
 import com.aoindustries.web.resources.registry.Style;
 import com.aoindustries.web.resources.servlet.RegistryEE;
 import javax.servlet.ServletContextEvent;
@@ -31,12 +32,19 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the style in RegistryEE.")
 public class AoStyle implements ServletContextListener {
 
+	public static final Group.Name RESOURCE_GROUP = new Group.Name("ao-style");
+
+	// TODO: Change to Group.Name once we have group-level ordering
 	public static final Style AO_STYLE = new Style("/ao-style/ao-style.css");
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
 		// Add our CSS file
-		RegistryEE.get(event.getServletContext()).global.styles.add(AO_STYLE);
+		RegistryEE.Application.get(event.getServletContext())
+			.activate(RESOURCE_GROUP) // TODO: Activate as-needed?
+			.getGroup(RESOURCE_GROUP)
+			.styles
+			.add(AO_STYLE);
 	}
 
 	@Override
