@@ -37,7 +37,7 @@ along with ao-style.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2020-02-25T08:37:53-0600"
-		dateModified="2020-03-04T03:14:31-0600"
+		dateModified="2020-03-26T20:31:48-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.aoindustries:ao-style:pom.version}" />
@@ -52,20 +52,29 @@ along with ao-style.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
-			>
-				<ul>
-					<li>
-						Consolidated a base set of styles from multiple projects into this one place.
-						These are very general concepts, like a table with a thin border.
-						Any project that requires any of these styles should add this as a dependency.
-					</li>
-					<li>
-						New CSS classes for table formatting:
-						<code>ao-grid</code>, <code>ao-outside-border</code>, <code>ao-no-border</code>, <code>ao-packed</code>, and <code>ao-spread</code>.
-					</li>
-					<li>Registers itself with <core:link book="/ao-web-resources/servlet" page="/index.jspx" />.</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.0.0"
+			datePublished="2020-03-26T20:31:48-05:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>
+					Consolidated a base set of styles from multiple projects into this one place.
+					These are very general concepts, like a table with a thin border.
+					Any project that requires any of these styles should add this as a dependency.
+				</li>
+				<li>
+					New CSS classes for table formatting:
+					<code>ao-grid</code>, <code>ao-outside-border</code>, <code>ao-no-border</code>, <code>ao-packed</code>, and <code>ao-spread</code>.
+				</li>
+				<li>Registers itself with <core:link book="/ao-web-resources/servlet" page="/index.jspx" />.</li>
+			</ul>
+		</changelog:release>
 	</core:page>
 </jsp:root>
