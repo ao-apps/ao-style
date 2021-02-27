@@ -1,6 +1,6 @@
 /*
  * ao-style - Set of base CSS styles shared by multiple projects.
- * Copyright (C) 2020  AO Industries, Inc.
+ * Copyright (C) 2020, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -88,7 +88,7 @@ table.ao-no-border > tr > td {
 
 /*
 	A table with no borders.
-	Has a no cell padding.
+	Has no cell padding.
  */
 table.ao-packed {
 	border-collapse: collapse;
