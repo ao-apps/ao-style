@@ -1,6 +1,6 @@
 /*
  * ao-style - Set of base CSS styles shared by multiple projects.
- * Copyright (C) 2020, 2021  AO Industries, Inc.
+ * Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,11 +22,11 @@
  */
 
 /*
-	A table with a thin border around the table and all cells.
-	Has a moderate cell padding.
+  A table with a thin border around the table and all cells.
+  Has a moderate cell padding.
  */
 table.ao-grid {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 table.ao-grid,
 table.ao-grid > thead > tr > th,
@@ -37,20 +37,20 @@ table.ao-grid > tfoot > tr > th,
 table.ao-grid > tfoot > tr > td,
 table.ao-grid > tr > th,
 table.ao-grid > tr > td {
-	border: 1px solid #606060;
-	padding: 2px;
-	margin: 0px;
+  border: 1px solid #606060;
+  padding: 2px;
+  margin: 0px;
 }
 
 /*
-	A table with a thin border around the table only (but not any cells).
-	Has a moderate cell padding.
+  A table with a thin border around the table only (but not any cells).
+  Has a moderate cell padding.
  */
 table.ao-outside-border {
-	border-collapse: collapse;
-	border: 1px solid #606060;
-	padding: 2px;
-	margin: 0px;
+  border-collapse: collapse;
+  border: 1px solid #606060;
+  padding: 2px;
+  margin: 0px;
 }
 table.ao-outside-border > thead > tr > th,
 table.ao-outside-border > thead > tr > td,
@@ -60,17 +60,17 @@ table.ao-outside-border > tfoot > tr > th,
 table.ao-outside-border > tfoot > tr > td,
 table.ao-outside-border > tr > th,
 table.ao-outside-border > tr > td {
-	border: 0px;
-	padding: 2px;
-	margin: 0px;
+  border: 0px;
+  padding: 2px;
+  margin: 0px;
 }
 
 /*
-	A table with no borders.
-	Has a moderate cell padding.
+  A table with no borders.
+  Has a moderate cell padding.
  */
 table.ao-no-border {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 table.ao-no-border,
 table.ao-no-border > thead > tr > th,
@@ -81,17 +81,17 @@ table.ao-no-border > tfoot > tr > th,
 table.ao-no-border > tfoot > tr > td,
 table.ao-no-border > tr > th,
 table.ao-no-border > tr > td {
-	border: 0px;
-	padding: 2px;
-	margin: 0px;
+  border: 0px;
+  padding: 2px;
+  margin: 0px;
 }
 
 /*
-	A table with no borders.
-	Has no cell padding.
+  A table with no borders.
+  Has no cell padding.
  */
 table.ao-packed {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 table.ao-packed,
 table.ao-packed > thead > tr > th,
@@ -102,17 +102,17 @@ table.ao-packed > tfoot > tr > th,
 table.ao-packed > tfoot > tr > td,
 table.ao-packed > tr > th,
 table.ao-packed > tr > td {
-	border: 0px;
-	padding: 0px;
-	margin: 0px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*
-	A table with no borders.
-	Has a larger cell padding.
+  A table with no borders.
+  Has a larger cell padding.
  */
 table.ao-spread {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 table.ao-spread,
 table.ao-spread > thead > tr > th,
@@ -123,7 +123,7 @@ table.ao-spread > tfoot > tr > th,
 table.ao-spread > tfoot > tr > td,
 table.ao-spread > tr > th,
 table.ao-spread > tr > td {
-	border: 0px;
-	padding: 4px;
-	margin: 0px;
+  border: 0px;
+  padding: 4px;
+  margin: 0px;
 }
