@@ -42,10 +42,10 @@ public class AoStyle implements ServletContextListener {
   public void contextInitialized(ServletContextEvent event) {
     // Add our CSS file
     RegistryEE.Application.get(event.getServletContext())
-      .activate(RESOURCE_GROUP) // TODO: Activate as-needed?
-      .getGroup(RESOURCE_GROUP)
-      .styles
-      .add(AO_STYLE);
+        .activate(RESOURCE_GROUP) // TODO: Activate as-needed?
+        .getGroup(RESOURCE_GROUP)
+        .styles
+        .add(AO_STYLE);
   }
 
   @Override
