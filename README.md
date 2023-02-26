@@ -23,7 +23,7 @@ Set of base CSS styles shared by multiple projects.
 * [Project Home](https://oss.aoapps.com/style/)
 * [Changelog](https://oss.aoapps.com/style/changelog)
 * [API Docs](https://oss.aoapps.com/style/apidocs/)
-* [Maven Central Repository](https://search.maven.org/artifact/com.aoapps/ao-style)
+* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.aoapps&q=a%3Aao-style)
 * [GitHub](https://github.com/ao-apps/ao-style)
 
 ## Contact Us
