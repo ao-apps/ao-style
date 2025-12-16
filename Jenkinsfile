@@ -35,7 +35,7 @@ def upstreamProjects = [
 
   // Direct
   'web-resources/registry', // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-registry</artifactId>
-  'web-resources/servlet', // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId>
+  'web-resources/servlet-javaee', // <groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId>
   // No Jenkins: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
 
   // BOM
